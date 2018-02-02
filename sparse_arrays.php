@@ -1,3 +1,5 @@
+<?php
+
 /*
 There is a collection of  N strings ( There can be multiple occurences of a particular string ). Each string's length is no more than 20 characters. There are also Q queries. For each query, you are given a string, and you need to find out how many times this string occurs in the given collection of N strings.
 
@@ -35,7 +37,6 @@ Explanation
 Here, "aba" occurs twice, in the first and third string. The string "xzxb" occurs once in the fourth string, and "ab" does not occur at all.
 */
 
-<?php
 $_fp = fopen("php://stdin", "r");
 /* Enter your code here. Read input from STDIN. Print output to STDOUT */
     $input_array = array();
@@ -63,4 +64,3 @@ $_fp = fopen("php://stdin", "r");
         }
     }
     //print_r($result_array);                           
-?>
