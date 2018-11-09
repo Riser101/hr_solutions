@@ -27,12 +27,6 @@ Sample Output
 
 #!/bin/python3
 
-import math
-import os
-import random
-import re
-import sys
-
 # Complete the sockMerchant function below.
 def sockMerchant(n, ar):
 	number_of_pairs=0
@@ -43,6 +37,8 @@ def sockMerchant(n, ar):
 		else:
 			number_of_pairs+=1
 			del(hashMap[item])
+
+	print number_of_pairs			
 	return number_of_pairs
 
 sockMerchant(9, [10,20,20,10,10,30,50,10,20])
