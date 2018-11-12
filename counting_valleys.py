@@ -44,13 +44,18 @@ He enters and leaves one valley.
 '''
 
 def countingValleys(n, s):
-	valley_counter = 0
-	step_tracker = 0
-	
-	for item in s:
-		if item == 
-
-	return None
+    curr_step_in_input_str = 0
+    downhill_tracker = 0
+    
+    for item in s:
+        if item == 'D' and curr_step_in_input_str == 0:
+            downhill_tracker+=1
+        if item == 'U':
+            curr_step_in_input_str+=1
+        elif item == 'D': 
+            curr_step_in_input_str-=1
+    # print downhill_tracker
+    return downhill_tracker
 
 countingValleys(8, 'UDDDUDUU')
 
